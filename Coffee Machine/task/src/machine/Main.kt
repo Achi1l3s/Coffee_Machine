@@ -19,11 +19,11 @@ fun printAndRead(info: String): String {
 }
 
 class CoffeeMachine() {
-    private var milk = 540
-    private var coffeeBeans = 120
-    private var water = 400
-    private var cups = 9
-    private var money = 550
+    private var milk = 4540
+    private var coffeeBeans = 1120
+    private var water = 4400
+    private var cups = 90
+    private var money = 5504
 
     override fun toString(): String {
         return """
@@ -38,13 +38,13 @@ class CoffeeMachine() {
 
     fun fill() {
         println()
-        val water = printAndRead("Write how many ml of water you want to add:")
+        val water = printAndRead("Please write how many ml of water you want to add:")
         this.water += water.toInt()
-        val milk = printAndRead("Write how many ml of milk you want to add:")
+        val milk = printAndRead("Please write how many ml of milk you want to add:")
         this.milk += milk.toInt()
-        val beans = printAndRead("Write how many grams of coffee beans you want to add:")
+        val beans = printAndRead("Please write how many grams of coffee beans you want to add:")
         this.coffeeBeans += beans.toInt()
-        val cups = printAndRead("Write how many disposable cups you want to add:")
+        val cups = printAndRead("Please write how many disposable cups you want to add:")
         this.cups += cups.toInt()
     }
 
