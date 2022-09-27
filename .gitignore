@@ -1,0 +1,4 @@
+# Project exclude paths
+/.gradle/
+/.idea/
+/Coffee Machine/task/build/
